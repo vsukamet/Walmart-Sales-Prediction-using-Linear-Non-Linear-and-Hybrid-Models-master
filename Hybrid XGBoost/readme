@@ -1,0 +1,22 @@
+In DataSets Folder We have Walmart Datasets named as features.csv, train.csv and stores.csv
+
+For DataPreprocessing Code, go to 'DATAPREPROCESS' folder in code files folder and direclty execute 'Datapreprocess.py' by giving 'features.csv', 'train.csv' and 'stores.csv'
+as  dataset.
+
+In Preprocessed Datasets you have different data sets that are obtained by combining features.csv, train.csv and stores.csv 
+
+In Code Files Folder we have three folders XGBOOST, ES, DATAPREPROCESS and ARIMA+XGBoost Hybrid 
+
+XGBoost Algorithm code gives RMSE values for different types of the stores present in the dataset. It also give plots such as Feature Importance, decision Tree plot and Actual Vs Predicted Sales. Finally, it gives Average RMSE value for all Stores.
+
+To Exexute the XGBOOST algorithm, go to XGBOOST folder in code files folder and directly Execute XGB.py by giving 'TYPE 0 DATA.csv' as dataset which is present in PREPROCESSED DATASETS FOLDER. It outputs are present in OUTPUT folder of XGBOOST
+
+
+To Exexute the Exponential Smoothing algorithm, go to ES folder in code files folder and directly Execute ES.py by giving 'TYPE 0 DATA.csv' as dataset which is present in PREPROCESSED DATASETS FOLDER. It outputs are present in OUTPUT folder of ES.
+
+ARIMA+XGBOOST takes the dataset and then the data is sent to ARIMA to get Linear Forecasts and then Non Linear Residue is sent to XGBoost which gives Non-linear forecasts. Finally Linear and Non linear are added and compared with actual Sales for each Store. This code gives the RMSE values of ARIMA model for each stores based on store type and Average RMSE Value for ARIMA. Also RMSE values of HYBRID model for each stores based on store type and Average RMSE for Hybrid Model.
+
+To Execute the ARIMA+XGBOOST HYBRID algorithm, go to 'ARIMA-XGBOOST HYBRID' FOLDER and directly Execute 'XGBOOST HYBRID.py' by giving 'COMPLETEDATA.csv' as  dataset which is present in PREPROCESSED DATASETS FOLDER.
+
+For DataPreprocessing Code, go to 'DATAPREPROCESS' folder in code files folder and direclty execute 'Datapreprocess.py' by giving 'features.csv', 'train.csv' and 'stores.csv'
+as  dataset.
